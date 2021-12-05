@@ -1,5 +1,7 @@
+import "./Header.css"
 function Header() {
   return (
+    <div>
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
@@ -53,6 +55,10 @@ function Header() {
         </div>
       </div>
     </nav>
+    <div className="jumbotron">
+
+    </div>
+    </div>
   );
 }
 

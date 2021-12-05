@@ -1,0 +1,65 @@
+
+.jumbotron {
+    height: 30vh;
+    color: #fff;
+    background-image: url("D:\Computer Science\borui-project\Borui\src\components\header.jpg");
+    background-position: center;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+
+}
+
+/**
+ * jumbotron animation
+ */
+
+ .jumbotron {
+    height: 240px;
+    background: linear-gradient(-45deg, #ecbbad, #96073e, #23a6d5, #23d5ab);
+    /* -webkit-animation: Gradient 15s ease infinite; */
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    
+    background-image: url("./header.jpg");
+}
+/* 
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

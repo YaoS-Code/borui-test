@@ -4,6 +4,7 @@ import axios from "axios";
 
 export default class Hangman extends React.Component {
   state = {
+    browerCount:0,
     right: 0,
     wrong: 0,
     myguess: "",
