@@ -4,7 +4,6 @@ import axios from "axios";
 
 export default class Hangman extends React.Component {
   state = {
-    count: 0,
     right: 0,
     wrong: 0,
     myguess: "",
@@ -68,13 +67,35 @@ export default class Hangman extends React.Component {
     var ctx = c.getContext("2d");
     ctx.lineWidth = 2;
     ctx.strokeStyle = "white";
-
-    // //step 1
-    // ctx.beginPath();
-    // ctx.moveTo(this.state.locations[0][0], this.state.locations[0][1]);
-    // ctx.lineTo(this.state.locations[0][2], this.state.locations[0][3]);
-    // ctx.stroke();
-    // ctx.closePath();
+    console.log(this.state.locations[this.state.wrong]);
+    if (this.state.wrong !== 4) {
+      ctx.beginPath();
+      ctx.moveTo(
+        this.state.locations[this.state.wrong][0],
+        this.state.locations[this.state.wrong][1]
+      );
+      ctx.lineTo(
+        this.state.locations[this.state.wrong][2],
+        this.state.locations[this.state.wrong][3]
+      );
+      ctx.stroke();
+      ctx.closePath();
+    }
+    if (this.state.wrong === 4) {
+      ctx.beginPath();
+      ctx.arc(
+        this.state.locations[4][0],
+        this.state.locations[4][1],
+        this.state.locations[4][2],
+        this.state.locations[4][3],
+        2 * Math.PI
+      );
+      ctx.stroke();
+      ctx.closePath();
+    }
+    if (this.state.wrong === 10) {
+      console.log("Done!");
+    }
     // //step 2
     // ctx.beginPath();
     // ctx.moveTo(this.state.locations[1][0], this.state.locations[1][1]);
@@ -93,7 +114,7 @@ export default class Hangman extends React.Component {
     // ctx.lineTo(this.state.locations[3][2], this.state.locations[3][3]);
     // ctx.stroke();
     // ctx.closePath();
-    // //step 5 circle
+    //step 5 circle
     // ctx.beginPath();
     // ctx.arc(
     //   this.state.locations[4][0],
@@ -137,14 +158,17 @@ export default class Hangman extends React.Component {
   }
 
   checkGuess = () => {
+    if (this.state.wrong === 10) {
+      return;
+    }
     const letter = this.state.myguess;
     const word = this.state.randWord;
     console.log(letter, word);
     if (word.includes(letter)) {
       this.draw_letter(letter, word);
     } else {
+      this.setState({ wrong: this.state.wrong + 1 });
       this.draw();
-      console.log("D");
     }
   };
   draw_letter = (letter, word) => {
@@ -154,6 +178,7 @@ export default class Hangman extends React.Component {
     ctx.strokeStyle = "white";
     for (var count = 0; count < word.length; count++) {
       if (letter === word[count]) {
+        this.setState({ right: this.state.right + 1 });
         ctx.font = "100% Comic Sans MS";
         ctx.fillStyle = "white";
         ctx.fillText(
@@ -166,13 +191,13 @@ export default class Hangman extends React.Component {
   };
   componentDidMount() {
     this.getWord();
-    this.draw();
   }
   render() {
     return (
       <div className="Hangman">
         <div>
           <input
+            id="letter_input"
             placeholder="Guess One Letter"
             onChange={(e) => this.setState({ myguess: e.target.value })}
           ></input>
