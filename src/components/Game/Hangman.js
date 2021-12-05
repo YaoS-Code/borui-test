@@ -1,7 +1,6 @@
 import "./Hangman.css";
 import React from "react";
 import axios from "axios";
-
 export default class Hangman extends React.Component {
   state = {
     right: 0,
@@ -24,7 +23,6 @@ export default class Hangman extends React.Component {
     positions: [],
   };
 
-  //get the word
   getWord = () => {
     axios
       .get(
@@ -54,14 +52,10 @@ export default class Hangman extends React.Component {
           this.setState({
             positions: [...this.state.positions, [153 + 25 * posX, 135]],
           });
-          //   ctx.font = "100% Comic Sans MS";
-          //   ctx.fillStyle = "white";
-          //   ctx.fillText(element, 153 + 25 * posX, 135);
           posX = posX + 1;
         });
       });
   };
-  //define the draw 400l*200w
   draw() {
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
@@ -96,65 +90,6 @@ export default class Hangman extends React.Component {
     if (this.state.wrong === 10) {
       console.log("Done!");
     }
-    // //step 2
-    // ctx.beginPath();
-    // ctx.moveTo(this.state.locations[1][0], this.state.locations[1][1]);
-    // ctx.lineTo(this.state.locations[1][2], this.state.locations[1][3]);
-    // ctx.stroke();
-    // ctx.closePath();
-    // //step 3
-    // ctx.beginPath();
-    // ctx.moveTo(this.state.locations[2][0], this.state.locations[2][1]);
-    // ctx.lineTo(this.state.locations[2][2], this.state.locations[2][3]);
-    // ctx.stroke();
-    // ctx.closePath();
-    // //step 4
-    // ctx.beginPath();
-    // ctx.moveTo(this.state.locations[3][0], this.state.locations[3][1]);
-    // ctx.lineTo(this.state.locations[3][2], this.state.locations[3][3]);
-    // ctx.stroke();
-    // ctx.closePath();
-    //step 5 circle
-    // ctx.beginPath();
-    // ctx.arc(
-    //   this.state.locations[4][0],
-    //   this.state.locations[4][1],
-    //   this.state.locations[4][2],
-    //   this.state.locations[4][3],
-    //   2 * Math.PI
-    // );
-    // ctx.stroke();
-    // ctx.closePath();
-    // //step 6
-    // ctx.beginPath();
-    // ctx.moveTo(this.state.locations[5][0], this.state.locations[5][1]);
-    // ctx.lineTo(this.state.locations[5][2], this.state.locations[5][3]);
-    // ctx.stroke();
-    // ctx.closePath();
-    // //step 7
-    // ctx.beginPath();
-    // ctx.moveTo(this.state.locations[6][0], this.state.locations[6][1]);
-    // ctx.lineTo(this.state.locations[6][2], this.state.locations[6][3]);
-    // ctx.stroke();
-    // ctx.closePath();
-    // //step 8
-    // ctx.beginPath();
-    // ctx.moveTo(this.state.locations[7][0], this.state.locations[7][1]);
-    // ctx.lineTo(this.state.locations[7][2], this.state.locations[7][3]);
-    // ctx.stroke();
-    // ctx.closePath();
-    // //step 9
-    // ctx.beginPath();
-    // ctx.moveTo(this.state.locations[8][0], this.state.locations[8][1]);
-    // ctx.lineTo(this.state.locations[8][2], this.state.locations[8][3]);
-    // ctx.stroke();
-    // ctx.closePath();
-    // //step 10
-    // ctx.beginPath();
-    // ctx.moveTo(this.state.locations[9][0], this.state.locations[9][1]);
-    // ctx.lineTo(this.state.locations[9][2], this.state.locations[9][3]);
-    // ctx.stroke();
-    // ctx.closePath();
   }
 
   checkGuess = () => {
@@ -201,19 +136,9 @@ export default class Hangman extends React.Component {
             placeholder="Guess One Letter"
             onChange={(e) => this.setState({ myguess: e.target.value })}
           ></input>
-          <button
-            onClick={this.checkGuess}
-            //   this.setState({ count: this.state.count + 1 });
-            //   checkGuess();
-            // }}
-          >
-            Guess!
-          </button>
-          {/* <div>You have Clicked me for {this.state.count}</div>
-          <div>You have guessed {this.state.myguess}</div> */}
+          <button onClick={this.checkGuess}>Guess!</button>
         </div>
         <canvas id="myCanvas"></canvas>
-        {/* <canvas id="myCanvasText"></canvas> */}
       </div>
     );
   }
