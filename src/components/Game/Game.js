@@ -4,7 +4,7 @@ function Game() {
       <div className="card bg-dark col-sm-3 mycard">
         <a href={"/game/hangman"}>
           <img
-            src="./images/hangman.jpeg"
+            src="./images/hangman.png"
             className="card-img-top card-image"
             alt="Game"
           />

@@ -28,7 +28,7 @@ function Body() {
       <div className="card bg-dark col-sm-3 mycard">
         <a href={"/course"}>
           <img
-            src="./images/learn.jpeg"
+            src="./images/learn.png"
             className="card-img-top card-image"
             alt="..."
           />
