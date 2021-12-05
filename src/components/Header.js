@@ -3,7 +3,7 @@ function Header() {
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          Navbar
+          Borui
         </a>
         <button
           className="navbar-toggler"
