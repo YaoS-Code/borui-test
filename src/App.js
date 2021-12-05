@@ -8,17 +8,19 @@ import Hangman from "./components/Game/Hangman";
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import Error404 from "./components/404";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="game" element={<Game />} />
-        <Route path="course" element={<Course />} />
-        <Route path="about" element={<About />} />
-        <Route path="game/hangman" element={<Hangman />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="game" element={<Game />} />
+        <Route exact path="course" element={<Course />} />
+        <Route exact path="about" element={<About />} />
+        <Route exact path="game/hangman" element={<Hangman />} />
+        <Route path="/*" element={<Error404 />} />
       </Routes>
       <Footer />
     </div>
