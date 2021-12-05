@@ -1,0 +1,17 @@
+.Hangman{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 50%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px red;
+}
+
+#myCanvas{
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+.main_cards{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+.mycard{
+
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px 5px red;
+}
+.card-image{
+    margin-top: 5%;
+    height: 300px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 3px 1px grey   ;
+}
