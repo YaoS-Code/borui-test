@@ -1,6 +1,7 @@
 import "./Hangman.css";
 import React from "react";
 import axios from "axios";
+
 export default class Hangman extends React.Component {
   state = {
     right: 0,
@@ -20,9 +21,22 @@ export default class Hangman extends React.Component {
       [125, 80, 115, 95],
       [125, 80, 135, 95],
     ],
+    wrongPos: [
+      [200, 20],
+      [200, 40],
+      [200, 60],
+      [200, 80],
+      [200, 100],
+      [250, 20],
+      [250, 40],
+      [250, 60],
+      [250, 80],
+      [250, 100],
+    ],
     positions: [],
   };
 
+  //get the word
   getWord = () => {
     axios
       .get(
@@ -87,14 +101,13 @@ export default class Hangman extends React.Component {
       ctx.stroke();
       ctx.closePath();
     }
-    if (this.state.wrong === 10) {
-      console.log("Done!");
-    }
+
+    return;
   }
 
   checkGuess = () => {
     if (this.state.wrong === 10) {
-      return;
+      return (document.getElementById("winOrLose").innerHTML = "You Lose!");
     }
     const letter = this.state.myguess;
     const word = this.state.randWord;
@@ -104,6 +117,10 @@ export default class Hangman extends React.Component {
     } else {
       this.setState({ wrong: this.state.wrong + 1 });
       this.draw();
+      this.draw_wrong_letter(letter, word);
+    }
+    if (this.state.right === this.state.randWord.length) {
+      return (document.getElementById("winOrLose").innerHTML = "You Win!");
     }
   };
   draw_letter = (letter, word) => {
@@ -123,6 +140,21 @@ export default class Hangman extends React.Component {
         );
       }
     }
+    return;
+  };
+  draw_wrong_letter = (letter, word) => {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "white";
+    ctx.font = "100% Comic Sans MS";
+    ctx.fillStyle = "white";
+    ctx.fillText(
+      letter,
+      this.state.wrongPos[this.state.wrong][0],
+      this.state.wrongPos[this.state.wrong][1]
+    );
+    return;
   };
   componentDidMount() {
     this.getWord();
@@ -130,13 +162,19 @@ export default class Hangman extends React.Component {
   render() {
     return (
       <div className="Hangman">
-        <div>
+        <div id="winOrLose"></div>
+        <div className="inputall">
           <input
             id="letter_input"
-            placeholder="Guess One Letter"
+            placeholder="Type One"
             onChange={(e) => this.setState({ myguess: e.target.value })}
           ></input>
-          <button onClick={this.checkGuess}>Guess!</button>
+          <button
+            className="bg-warning letter_button"
+            onClick={this.checkGuess}
+          >
+            Guess!
+          </button>
         </div>
         <canvas id="myCanvas"></canvas>
       </div>

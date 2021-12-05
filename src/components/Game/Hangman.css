@@ -1,17 +1,47 @@
 .Hangman{
+    color:wheat;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
     color: antiquewhite;
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: 50%;
+    height: 60%;
     align-self: center;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
     box-shadow: 5px 5px 15px 5px red;
 }
-
+.inputall{
+    color:wheat;
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}   
+#letter_input{
+    width: 20%;
+}
+#letter_button{
+    width: 20%;
+}
 #myCanvas{
     width: 100%;
+}
+#winOrLose{
+    margin-top:3%;
+}
+@media screen and (max-width: 575px){
+    .inputall{
+        width: 66%;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    #letter_input{
+        width: 100%;
+    }
+    #letter_button{
+        width: 100%;
+    }
 }
