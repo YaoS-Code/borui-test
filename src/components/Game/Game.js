@@ -1,3 +1,4 @@
+import './Game.css'
 function Game() {
   return (
     <div className="container-fluid row main_cards">

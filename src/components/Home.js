@@ -17,13 +17,6 @@ function Body() {
             bulk of the card's content.
           </p>
         </div>
-        {/* <ul className="list-group list-group-flush">
-          <a href="/game/hangman">
-            <li className="list-group-item text-primary bg-dark">Hangman</li>
-          </a>
-          <li className="list-group-item text-primary bg-dark">Racing</li>
-          <li className="list-group-item text-primary bg-dark">Guess Number</li>
-        </ul> */}
       </div>
       <div className="card bg-dark col-sm-3 mycard">
         <a href={"/course"}>
@@ -40,11 +33,6 @@ function Body() {
             bulk of the card's content.
           </p>
         </div>
-        {/* <ul className="list-group list-group-flush">
-          <li className="list-group-item text-primary bg-dark">Mathematics</li>
-          <li className="list-group-item text-primary bg-dark">Coding</li>
-          <li className="list-group-item text-primary bg-dark">English</li>
-        </ul> */}
       </div>
     </div>
   );

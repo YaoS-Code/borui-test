@@ -5,7 +5,7 @@
     gap: 5vw;
 }
 .mycard{
-
+    transition-duration: 0.5s;
     border-radius: 5%;
     box-shadow: 5px 5px 10px 5px red;
 }
@@ -13,5 +13,20 @@
     margin-top: 5%;
     height: 300px;
     border-radius: 5%;
-    box-shadow: 1px 1px 3px 1px grey   ;
+    box-shadow: 1px 1px 3px 1px grey;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card-title{
+    align-self: center;
+    color:rgb(35, 233, 223);
+}
+.card-text{
+    color:pink;
+}
+.mycard:hover{
+    transform: scale(0.95);
+    transition-duration: 0.5s;
 }
