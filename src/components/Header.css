@@ -19,9 +19,9 @@
  */
 
  .jumbotron {
-    height: 240px;
-    background: linear-gradient(-45deg, #ecbbad, #96073e, #23a6d5, #23d5ab);
-    /* -webkit-animation: Gradient 15s ease infinite; */
+    height: 25vh;
+    /* background: linear-gradient(-45deg, #ecbbad, #96073e, #23a6d5, #23d5ab); */
+    -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
     
