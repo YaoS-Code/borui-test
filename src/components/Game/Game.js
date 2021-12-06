@@ -20,6 +20,22 @@ function Game() {
           </p>
         </div>
       </div>
+
+      <div className="card bg-dark col-sm-3 mycard">
+        <a href={"/game/flappybird"}>
+          <img
+            src="./images/hangman.png"
+            className="card-img-top card-image"
+            alt="Game"
+          />
+        </a>
+        <div className="card-body">
+          <h5 className="card-title text-center">Flappy Bird</h5>
+          <p className="card-text">
+          Flappy Bird is a mobile game developed by Vietnamese video game artist and programmer Dong Nguyen (Vietnamese: Nguyễn Hà Đông), under his game development company
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
