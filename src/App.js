@@ -6,6 +6,7 @@ import Course from "./components/Course/Course";
 import Arts from "./components/Arts/Arts";
 import About from "./components/About/About";
 import Hangman from "./components/Game/Hangman";
+import FlappyBird from "./components/Game/FlappyBird";
 import Error from "./components/Error/Error";
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
@@ -18,11 +19,12 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/home" element={<Home />} />
-        <Route exact path="game" element={<Game />} />
-        <Route exact path="course" element={<Course />} />
-        <Route exact path="art" element={<Arts />} />
-        <Route exact path="about" element={<About />} />
-        <Route exact path="game/hangman" element={<Hangman />} />
+        <Route exact path="/game" element={<Game />} />
+        <Route exact path="/course" element={<Course />} />
+        <Route exact path="/arts" element={<Arts />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/game/hangman" element={<Hangman />} />
+        <Route exact path="/game/flappybird" element={<FlappyBird />} />
         <Route path="/*" element={<Error />} />
       </Routes>
       <Footer />

@@ -36,7 +36,7 @@ function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/art">
+              <a className="nav-link" href="/arts">
                 ART 艺术
               </a>
             </li>

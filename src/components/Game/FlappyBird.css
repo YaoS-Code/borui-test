@@ -1,0 +1,13 @@
+.flappybird{
+    width: 30vw;
+    height: 60vh;
+    transition-duration: 0.5s;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px 5px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: red;
+}

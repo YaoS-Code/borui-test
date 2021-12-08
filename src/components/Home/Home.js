@@ -11,10 +11,12 @@ function Body() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title">Games</h5>
+          <h5 className="card-title">Games 游戏</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            The games I made, welcome to play.
+          </p>
+          <p className="card-text">
+            自己设计的一些小游戏。 
           </p>
         </div>
       </div>
@@ -27,10 +29,12 @@ function Body() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title">Courses</h5>
+          <h5 className="card-title">Courses 课程</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            You will learn Coding, Math and English Here.
+          </p>
+          <p className="card-text">
+            你可以在这里学到数学，英语以及编程的知识。
           </p>
         </div>
       </div>
@@ -44,9 +48,12 @@ function Body() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title">Arts</h5>
+          <h5 className="card-title">Arts 艺术</h5>
           <p className="card-text">
-            The drawing from my families.
+            The drawing & Music Pieces from my families.
+          </p>
+          <p className="card-text">
+            欢迎订阅，家人的作品集~
           </p>
         </div>
       </div>
