@@ -24,7 +24,7 @@ function Game() {
       <div className="card bg-dark col-sm-3 mycard">
         <a href={"/game/flappybird"}>
           <img
-            src="./images/hangman.png"
+            src="./images/FlappyBird.png"
             className="card-img-top card-image"
             alt="Game"
           />
