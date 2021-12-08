@@ -10,5 +10,16 @@
     gap:2vh
 }
 p{
-    color: red;
+    color: rgb(180, 153, 153);
+}
+iframe{
+    width: 90%;
+    height: 75%;
+    border: none;
+}
+@media screen and (max-width: 575px){
+    .flappybird{
+        border: none;
+        width: 100vw;
+    }
 }
