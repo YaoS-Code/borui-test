@@ -1,12 +1,13 @@
 .flappybird{
-    width: 30vw;
-    height: 60vh;
+    width: 35vw;
+    height: 66vh;
     transition-duration: 0.5s;
     border-radius: 5%;
     box-shadow: 5px 5px 10px 5px red;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:2vh
 }
 p{
     color: red;
