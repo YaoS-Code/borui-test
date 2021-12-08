@@ -2,7 +2,7 @@
 .jumbotron {
     height: 30vh;
     color: #fff;
-    background-image: url("D:\Computer Science\borui-project\Borui\src\components\header.jpg");
+    background-image: url("\header.jpg");
     background-position: center;
     background-color: red;
     animation-name: example;

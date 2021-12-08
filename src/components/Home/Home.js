@@ -34,6 +34,23 @@ function Body() {
           </p>
         </div>
       </div>
+
+      <div className="card bg-dark col-sm-3 mycard">
+        <a href={"/arts"}>
+          <img
+            src="./images/arts.png"
+            className="card-img-top card-image"
+            alt="..."
+          />
+        </a>
+        <div className="card-body">
+          <h5 className="card-title">Arts</h5>
+          <p className="card-text">
+            The drawing from my families.
+          </p>
+        </div>
+      </div>
+
     </div>
   );
 }

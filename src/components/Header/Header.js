@@ -22,34 +22,42 @@ function Header() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="/">
-                HOME
+                HOME 主页
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="game">
-                GAME
+              <a className="nav-link" href="/game">
+                GAME 游戏
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="course">
-                COURSE
+              <a className="nav-link" href="/course">
+                COURSE 课程
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="about">
-                ABOUT
+              <a className="nav-link" href="/art">
+                ART 艺术
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/about">
+                ABOUT 关于
               </a>
             </li>
           </ul>
           <form className="d-flex">
-            <input
+            {/* <input
               className="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
-            />
+            /> */}
+            <button className="btn btn-outline-primary" type="submit">
+              Register
+            </button>
             <button className="btn btn-outline-success" type="submit">
-              Search
+              Login
             </button>
           </form>
         </div>
