@@ -7,7 +7,7 @@ function Header() {
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark ">
       <div className="container-fluid header-container">
         <Button className="bg-dark logo-container" href="/">
-          <img id="logo" src={"./images/logo.png"}/>
+          <img id="logo" src={"../images/logo.png"} alt="logo"/>
         </Button>
         <button
           className="navbar-toggler"

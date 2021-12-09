@@ -1,6 +1,6 @@
 .Hangman{
     color:wheat;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(56, 196, 201));
     color: antiquewhite;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 5px 5px 15px 5px red;
+    box-shadow: 5px 5px 15px 5px rgb(56, 196, 201);
 }
 .inputall{
     color:wheat;
@@ -34,7 +34,7 @@
 }
 @media screen and (max-width: 575px){
     .inputall{
-        width: 66%;
+        width: 65%;
         flex-direction: column;
         justify-content: flex-end;
     }

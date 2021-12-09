@@ -1,7 +1,7 @@
 .mycard{
     transition-duration: 0.5s;
     border-radius: 5%;
-    box-shadow: 5px 5px 10px 5px red;
+    box-shadow: 5px 5px 10px 5px rgb(56, 196, 201);
     
 }
 .mycard:hover{
