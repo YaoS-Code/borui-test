@@ -2,7 +2,7 @@ import "./Home.css";
 function Body() {
   return (
     <div className="container-fluid row main_cards">
-      <div className="card bg-dark col-sm-3 mycard">
+      <div className="card bg-dark col-sm-3 home-card">
         <a href={"/game"}>
           <img
             src="./images/game.png"
@@ -20,7 +20,7 @@ function Body() {
           </p>
         </div>
       </div>
-      <div className="card bg-dark col-sm-3 mycard">
+      <div className="card bg-dark col-sm-3 home-card">
         <a href={"/course"}>
           <img
             src="./images/learn.png"
@@ -39,7 +39,7 @@ function Body() {
         </div>
       </div>
 
-      <div className="card bg-dark col-sm-3 mycard">
+      <div className="card bg-dark col-sm-3 home-card">
         <a href={"/arts"}>
           <img
             src="./images/arts.png"

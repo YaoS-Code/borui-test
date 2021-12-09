@@ -1,5 +1,3 @@
-import countapi from 'countapi-js';
-
 
 function Footer() {
  

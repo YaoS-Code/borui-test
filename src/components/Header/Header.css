@@ -7,11 +7,10 @@ justify-content: center;
 }
 
 #logo{
-    width: 50px;
+    width: 70px;
     border-radius: 100%;
-    box-shadow: 5px rgb(39, 38, 38);
     opacity: 0.8;
-    border: solid red;
+    border: solid rgb(56, 196, 201);
 }
 .logo-container{
 border: none;
@@ -23,14 +22,18 @@ ul{
     display: flex;
     gap: 1vw;
 }
-
-
+li {
+    
+    border-radius: 5px;
+}
+.button-header{
+    color: black;}
 .jumbotron {
     height: 30vh;
     color: #fff;
     background-image: url("./header.jpg");
     background-position: center;
-    background-color: red;
+    background-color: rgb(56, 196, 201);
     animation-name: example;
     animation-duration: 4s;
     
