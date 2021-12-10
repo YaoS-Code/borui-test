@@ -36,6 +36,20 @@ function Game() {
           </p>
         </div>
       </div>
+      <div className="card bg-dark col-sm-3 mycard">
+        <a href={"/game/arkanoid"}>
+          <img
+            src="./images/Arkanoid.jpg"
+            className="card-img-top card-image"
+            alt="Game"
+          />
+        </a>
+        <div className="card-body">
+          <h5 className="card-title text-center">Arkanoid</h5>
+          <p className="card-text">
+          Arkanoid is a block breaker video game. Its plot involves the starship Arkanoid being attacked by a mysterious entity from space named DOH. A small paddle-shaped craft, the Vaus, is ejected from the Arkanoid.</p>
+        </div>
+      </div>
     </div>
   );
 }
