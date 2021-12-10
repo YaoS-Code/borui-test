@@ -39,7 +39,7 @@ function Game() {
       <div className="card bg-dark col-sm-3 mycard">
         <a href={"/game/arkanoid"}>
           <img
-            src="./images/Arkanoid.jpg"
+            src="./images/arkanoid.jpg"
             className="card-img-top card-image"
             alt="Game"
           />
