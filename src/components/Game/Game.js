@@ -2,7 +2,7 @@ import './Game.css'
 function Game() {
   return (
     <div className="container-fluid row main_cards">
-      <div className="card bg-dark col-sm-3 mycard">
+      <div className="card bg-dark col-sm-2 mycard">
         <a href={"/game/hangman"}>
           <img
             src="./images/hangman.png"
@@ -20,8 +20,22 @@ function Game() {
           </p>
         </div>
       </div>
-
-      <div className="card bg-dark col-sm-3 mycard">
+      <div className="card bg-dark col-sm-2 mycard">
+        <a href={"/game/jump"}>
+          <img
+            src="./images/jump.jpg"
+            className="card-img-top card-image"
+            alt="Game"
+          />
+        </a>
+        <div className="card-body">
+          <h5 className="card-title text-center">Jump</h5>
+          <p className="card-text">
+            自己的做的跳一跳。
+          </p>
+        </div>
+      </div>
+      <div className="card bg-dark col-sm-2 mycard">
         <a href={"/game/flappybird"}>
           <img
             src="./images/FlappyBird.png"
@@ -36,7 +50,7 @@ function Game() {
           </p>
         </div>
       </div>
-      <div className="card bg-dark col-sm-3 mycard">
+      <div className="card bg-dark col-sm-2 mycard">
         <a href={"/game/arkanoid"}>
           <img
             src="./images/arkanoid.jpg"

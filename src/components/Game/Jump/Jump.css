@@ -1,0 +1,26 @@
+.arkanoid{
+    width: 500px;
+    height: 500px;
+    transition-duration: 0.5s;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px 5px rgb(56, 196, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2vh
+    
+}
+p{
+    color: rgb(180, 153, 153);
+}
+iframe{
+    width: 90%;
+    height: 370px;
+    border: none;
+}
+@media screen and (max-width: 575px){
+    .flappybird{
+        border: none;
+        width: 100vw;
+    }
+}

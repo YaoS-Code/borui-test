@@ -3,7 +3,7 @@ function Arts() {
   return (
     <div className="container-fluid row main_cards">
       <div className="card bg-dark col-sm-4 mycard">
-        <a href={"/Arts/Drawings"}>
+        <a href={"/Arts/Photography"}>
           <img
             src="./images/photography.jpg"
             className="card-img-top card-image"
