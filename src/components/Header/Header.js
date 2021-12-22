@@ -1,7 +1,9 @@
 import "./Header.css"
 import { Dropdown, ButtonGroup, Button } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next'
 // import About from '../About/About'
 function Header() {
+  const  {t}  = useTranslation()
   return (
     <div>
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark ">
@@ -69,6 +71,11 @@ function Header() {
               </Dropdown>
             </li>
           </ul>
+
+          <div id="key" className="d-flex flex-column align-iterms-start">
+  
+          </div>
+
           <form className="d-flex">
              <Dropdown as={ButtonGroup}>
                 <a href="/about">
