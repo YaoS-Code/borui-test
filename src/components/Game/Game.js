@@ -34,7 +34,7 @@ function Game() {
         <div className="card-body">
           <h5 className="card-title text-center">{t("Jump")}</h5>
           <p className="card-text">
-            自己的做的跳一跳。
+          {t('jump_description')}
           </p>
         </div>
       </div>
@@ -49,7 +49,7 @@ function Game() {
         <div className="card-body">
           <h5 className="card-title text-center">{t("Flappy")}</h5>
           <p className="card-text">
-          Flappy Bird is a mobile game developed by Vietnamese video game artist and programmer Dong Nguyen (Vietnamese: Nguyễn Hà Đông), under his game development company
+          {t("flappy_description")}
           </p>
         </div>
       </div>
@@ -63,8 +63,7 @@ function Game() {
         </a>
         <div className="card-body">
           <h5 className="card-title text-center">{t("Arkanoid")}</h5>
-          <p className="card-text">
-          Arkanoid is a block breaker video game. Its plot involves the starship Arkanoid being attacked by a mysterious entity from space named DOH. A small paddle-shaped craft, the Vaus, is ejected from the Arkanoid.</p>
+          <p className="card-text">{t("arkanoid_description")}</p>
         </div>
       </div>
     </div>
