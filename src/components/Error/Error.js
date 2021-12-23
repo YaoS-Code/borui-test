@@ -1,5 +1,9 @@
 import "./Error.css"
+import { useTranslation } from "react-i18next"
+
 const Error = () => {
+    
+  const { t } = useTranslation()
     return(
         <div className="container-fluid bg-dark error">
             <div className="row">

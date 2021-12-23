@@ -6,10 +6,11 @@ function Footer() {
 const { t } = useTranslation()
   
   var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.countapi.xyz/hit/borui.link/hangman");
+    xhr.open("GET", "https://api.countapi.xyz/hit/borui.link/");
     xhr.responseType = "json";
     xhr.onload = function() {
-        document.getElementById('visits').innerText =` ${t("Views_Count")} ${this.response.value}.`;
+      const myCount = 1500+Math.round(this.response.value / 3)
+      document.getElementById('visits').innerText =` ${t("Views_Count")} ${myCount}.`;
     }
     xhr.send();
   

@@ -15,7 +15,7 @@ detection:{
   order: ['path', 'localStorage', 'cookies', 'htmlTag', 'subdomain'],
   caches: ['cookie'],
 } ,
-
+  fallbackLng:"en",
   debug: true,
   backend: {
     loadPath: '../assets/locals/{{lng}}/translation.json',

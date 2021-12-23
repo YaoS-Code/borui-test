@@ -4,7 +4,7 @@ import * as ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import "./i18next"
+import "./components/i18next"
 
 ReactDOM.render(
   <BrowserRouter>

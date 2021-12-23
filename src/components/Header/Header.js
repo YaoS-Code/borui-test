@@ -12,7 +12,7 @@ function Header() {
       country_code: 'ca'
     },
     {
-      code: 'en',
+      code: 'cn',
       name: 'Chinese',
       country_code: 'cn'
     },
