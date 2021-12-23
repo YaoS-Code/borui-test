@@ -1,5 +1,8 @@
 import "./Home.css";
+import { useTranslation } from "react-i18next"
+
 function Body() {
+  const { t } = useTranslation()
   return (
     <div className="container-fluid row main_cards">
       <div className="card bg-dark col-sm-3 home-card">
@@ -11,12 +14,9 @@ function Body() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title">Games 游戏</h5>
+          <h5 className="card-title">{t('Game')}</h5>
           <p className="card-text">
-            The games I made, welcome to play.
-          </p>
-          <p className="card-text">
-            自己设计的一些小游戏。 
+            {t('game_description')}
           </p>
         </div>
       </div>
@@ -29,12 +29,9 @@ function Body() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title">Courses 课程</h5>
+          <h5 className="card-title">{t('Course')}</h5>
           <p className="card-text">
-            You will learn Coding, Math and English Here.
-          </p>
-          <p className="card-text">
-            你可以在这里学到数学，英语以及编程的知识。
+            {t('course_description')}
           </p>
         </div>
       </div>
@@ -48,12 +45,9 @@ function Body() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title">Arts 艺术</h5>
+          <h5 className="card-title">{t('Art')}</h5>
           <p className="card-text">
-            The drawing & Music Pieces from my families.
-          </p>
-          <p className="card-text">
-            欢迎订阅，家人的作品集~
+            {t('art_description')}
           </p>
         </div>
       </div>

@@ -1,3 +1,25 @@
 {
-    "key": "hello world"
+    "Home": "HOME",
+    "Game": "GAME",
+    "Course": "COURSE",
+    "Art": "ART",
+    "About": "ABOUT",
+    "Login": "Login",
+    "Register": "Register",
+    "game_description": "The games I made, welcome to play.",
+    "course_description": "You will learn Coding, Math and English Here.",
+    "art_description": "The drawing & Music Pieces from my families.",
+    "Hangman":"Hangman",
+    "hangman_description":"Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses.",
+    "Flappy":"Flappy Bird",
+    "Arkanoid":"Arkanoid",
+    "Jump":"Jump Jump",
+    "Coding":"Coding",
+    "Math":"Math",
+    "English":"English",
+    "Drawings":"Drawings",
+    "Piano":"Piano",
+    "Photography":"Photography",
+    "Cello":"Cello",
+    "Views_Count":"View Count： "
   }

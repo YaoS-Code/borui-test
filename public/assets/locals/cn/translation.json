@@ -1,3 +1,25 @@
 {
-    "key": "你好，世界"
-  }
+  "Home": "主页",
+  "Game": "游戏",
+  "Course": "课程",
+  "Art": "艺术",
+  "About": "关于",
+  "Login": "登录",
+  "Register": "注册",
+  "game_description": "自己编写的小游戏，欢迎试玩！",
+  "course_description": "学习乐园，英语数学和编程。",
+  "art_description": "我的亲戚朋友们的作品集。有摄像绘画，还有我儿子的钢琴大提琴哦~~",
+  "Hangman":"刽子手",
+  "hangman_description":"猜英文单词小游戏，你必须在10步之内猜出未知英文单词，否则，小人就会被吊死啦！！快救救他吧！",
+  "Jump":"跳一跳",
+  "Flappy":"飞扬的小鸟",
+  "Arkanoid":"打砖块",
+  "Coding":"编程",
+  "Math":"数学",
+  "English":"英语",
+  "Drawings":"绘画",
+  "Photography":"摄影",
+  "Piano":"钢琴",
+  "Cello":"大提琴",
+  "Views_Count":"目前浏览量： "
+}

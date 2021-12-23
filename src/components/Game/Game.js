@@ -1,5 +1,11 @@
 import './Game.css'
+
+import { useTranslation } from "react-i18next"
+
 function Game() {
+  
+  const { t } = useTranslation()
+  
   return (
     <div className="container-fluid row main_cards">
       <div className="card bg-dark col-sm-2 mycard">
@@ -11,12 +17,9 @@ function Game() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title text-center">HangMan</h5>
+          <h5 className="card-title text-center">{t("Hangman")}</h5>
           <p className="card-text">
-            Hangman is a paper and pencil guessing game for two or more players.
-            One player thinks of a word, phrase or sentence and the other(s)
-            tries to guess it by suggesting letters within a certain number of
-            guesses.
+            {t('hangman_description')}
           </p>
         </div>
       </div>
@@ -29,7 +32,7 @@ function Game() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title text-center">Jump</h5>
+          <h5 className="card-title text-center">{t("Jump")}</h5>
           <p className="card-text">
             自己的做的跳一跳。
           </p>
@@ -44,7 +47,7 @@ function Game() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title text-center">Flappy Bird</h5>
+          <h5 className="card-title text-center">{t("Flappy")}</h5>
           <p className="card-text">
           Flappy Bird is a mobile game developed by Vietnamese video game artist and programmer Dong Nguyen (Vietnamese: Nguyễn Hà Đông), under his game development company
           </p>
@@ -59,7 +62,7 @@ function Game() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title text-center">Arkanoid</h5>
+          <h5 className="card-title text-center">{t("Arkanoid")}</h5>
           <p className="card-text">
           Arkanoid is a block breaker video game. Its plot involves the starship Arkanoid being attacked by a mysterious entity from space named DOH. A small paddle-shaped craft, the Vaus, is ejected from the Arkanoid.</p>
         </div>
