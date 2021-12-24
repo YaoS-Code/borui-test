@@ -1,3 +1,4 @@
+import React from 'react';
 import './Arkanoid.css'
 function Arkanoid() {
   return (

@@ -1,4 +1,6 @@
+import React from 'react';
 import './Jump.css'
+
 function Jump() {
   return (
     <div className="container-fluid row main_cards">

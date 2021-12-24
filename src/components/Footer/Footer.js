@@ -1,4 +1,4 @@
-
+import React, { Component }  from 'react';
 import { useTranslation } from "react-i18next"
 
 function Footer() {

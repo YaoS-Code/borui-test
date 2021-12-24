@@ -1,4 +1,5 @@
 import './Game.css'
+import React  from 'react';
 
 import { useTranslation } from "react-i18next"
 
@@ -11,7 +12,7 @@ function Game() {
       <div className="card bg-dark col-sm-2 mycard">
         <a href={"/game/hangman"}>
           <img
-            src="./images/hangman.png"
+            src="/images/hangman.png"
             className="card-img-top card-image"
             alt="Game"
           />
@@ -26,7 +27,7 @@ function Game() {
       <div className="card bg-dark col-sm-2 mycard">
         <a href={"/game/jump"}>
           <img
-            src="./images/jump.jpg"
+            src="/images/jump.jpg"
             className="card-img-top card-image"
             alt="Game"
           />
@@ -41,7 +42,7 @@ function Game() {
       <div className="card bg-dark col-sm-2 mycard">
         <a href={"/game/flappybird"}>
           <img
-            src="./images/FlappyBird.png"
+            src="/images/FlappyBird.png"
             className="card-img-top card-image"
             alt="Game"
           />
@@ -56,7 +57,7 @@ function Game() {
       <div className="card bg-dark col-sm-2 mycard">
         <a href={"/game/arkanoid"}>
           <img
-            src="./images/arkanoid.jpg"
+            src="/images/arkanoid.jpg"
             className="card-img-top card-image"
             alt="Game"
           />

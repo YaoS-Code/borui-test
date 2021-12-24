@@ -1,3 +1,4 @@
+import React from 'react';
 import i18next from 'i18next';
 import { initReactI18next  } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -12,10 +13,9 @@ i18next
 // order and from where user language should be detected
 detection:{
   supportedLngs:['en','cn'],
-  order: ['path', 'localStorage', 'cookies', 'htmlTag', 'subdomain'],
+  order: ['htmlTag', 'cookies', 'path', 'localStorage', 'subdomain'],
   caches: ['cookie'],
 } ,
-  fallbackLng:"en",
   debug: true,
   backend: {
     loadPath: '../assets/locals/{{lng}}/translation.json',

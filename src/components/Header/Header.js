@@ -1,4 +1,5 @@
 import "./Header.css"
+import React from 'react';
 import { Dropdown, ButtonGroup, Button } from 'react-bootstrap';
 import { useTranslation } from "react-i18next"
 // import 'flag-icon-css/css/flag-icon.min.css'
@@ -15,7 +16,7 @@ function Header() {
       code: 'cn',
       name: 'Chinese',
       country_code: 'cn'
-    },
+    }
   ]
 
 

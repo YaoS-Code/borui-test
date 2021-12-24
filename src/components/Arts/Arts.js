@@ -1,8 +1,9 @@
+import React from 'react';
 import './Arts.css'
 function Arts() {
   return (
     <div className="container-fluid row main_cards">
-      <div className="card bg-dark col-sm-4 mycard">
+      <div className="card bg-dark col-sm-2 mycard">
         <a href={"/Arts/Photography"}>
           <img
             src="./images/photography.jpg"
@@ -18,7 +19,7 @@ function Arts() {
         </div>
       </div>
 
-      <div className="card bg-dark col-sm-4 mycard">
+      <div className="card bg-dark col-sm-2 mycard">
         <a href={"/Arts/Drawings"}>
           <img
             src="./images/drawings.jpg"
@@ -34,7 +35,7 @@ function Arts() {
         </div>
       </div>
 
-      <div className="card bg-dark col-sm-4 mycard">
+      <div className="card bg-dark col-sm-2 mycard">
         <a href={"/arts/piano"}>
           <img
             src="./images/piano.jpg"
@@ -50,7 +51,7 @@ function Arts() {
         </div>
       </div>
 
-      <div className="card bg-dark col-sm-4 mycard">
+      <div className="card bg-dark col-sm-2 mycard">
         <a href={"/arts/cello"}>
           <img
             src="./images/cello.jpg"
