@@ -35,7 +35,7 @@ function Game() {
         <div className="card-body">
           <h5 className="card-title text-center">{t("Jump")}</h5>
           <p className="card-text">
-          {t('jump_description')}
+          {t('jump_description')} 
           </p>
         </div>
       </div>

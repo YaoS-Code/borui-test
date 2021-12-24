@@ -1,6 +1,12 @@
 import React from 'react';
 import './Arts.css'
+
+import { useTranslation } from "react-i18next"
+
+
 function Arts() {
+  
+  const { t } = useTranslation()
   return (
     <div className="container-fluid row main_cards">
       <div className="card bg-dark col-sm-2 mycard">
@@ -12,9 +18,9 @@ function Arts() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title text-center">Photography 摄影</h5>
+          <h5 className="card-title text-center">{t('Photography')}</h5>
           <p className="card-text">
-            好朋友(Wen, Shen)的摄影集
+          {t("photography_description")}
           </p>
         </div>
       </div>
@@ -28,9 +34,9 @@ function Arts() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title text-center">Drawings 绘画</h5>
+          <h5 className="card-title text-center">{t('Drawings')}</h5>
           <p className="card-text">
-            Drawings from my families.
+            {t("drawings_description")}
           </p>
         </div>
       </div>
@@ -44,9 +50,9 @@ function Arts() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title text-center">Piano 钢琴</h5>
+          <h5 className="card-title text-center">{t('Piano')}</h5>
           <p className="card-text">
-          Piano from Hubery Song.
+          {t("piano_description")}
           </p>
         </div>
       </div>
@@ -60,9 +66,9 @@ function Arts() {
           />
         </a>
         <div className="card-body">
-          <h5 className="card-title text-center">Cello 大提琴</h5>
+          <h5 className="card-title text-center">{t('Cello')}</h5>
           <p className="card-text">
-          Cello from Hubery Song.
+          {t("cello_description")}
           </p>
         </div>
       </div>

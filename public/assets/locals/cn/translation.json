@@ -6,22 +6,32 @@
   "About": "关于",
   "Login": "登录",
   "Register": "注册",
+
   "game_description": "自己编写的小游戏，欢迎试玩！",
-  "course_description": "学习乐园，英语数学和编程。",
-  "art_description": "我的亲戚朋友们的作品集。有摄像绘画，还有我儿子的钢琴大提琴哦~~",
   "Hangman":"刽子手",
   "hangman_description":"猜英文单词小游戏，你必须在10步之内猜出未知英文单词，否则，小人就会被吊死啦！！快救救他吧！",
   "Jump":"跳一跳",
+  "jump_description":"微信上前几年超级火的一个小游戏。",
   "Flappy":"飞扬的小鸟",
-  "flappy_description":"Flappy Bird is a mobile game developed by Vietnamese video game artist and programmer Dong Nguyen (Vietnamese: Nguyễn Hà Đông), under his game development company",
+  "flappy_description":"大家一定都玩过，点击屏幕穿过管道吧！！",
   "Arkanoid":"打砖块",
-  "arkanoid_description":"Arkanoid is a block breaker video game. Its plot involves the starship Arkanoid being attacked by a mysterious entity from space named DOH. A small paddle-shaped craft, the Vaus, is ejected from the Arkanoid.",
+  "arkanoid_description":"打砖块哈，集中蝴蝶有惊喜哦！！",
+  
+  
+  "course_description": "学习乐园，英语数学和编程。",
   "Coding":"编程",
   "Math":"数学",
   "English":"英语",
+
   "Drawings":"绘画",
+  "drawings_description":"老爸的绘画作品，欢迎~~",
+  "art_description": "我的亲戚朋友们的作品集。有摄像绘画，还有我儿子的钢琴大提琴哦~~",
   "Photography":"摄影",
+  "photography_description":"好朋友（步行者）的摄影作品集~",
   "Piano":"钢琴",
+  "piano_description":"我儿子的大提琴作品，才几个月，慢慢来吧。",
   "Cello":"大提琴",
+  "cello_description":"我儿子的钢琴作品，一年了。加油啊！",
   "Views_Count":"目前浏览量： "
+
 }

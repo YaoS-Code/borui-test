@@ -21,8 +21,12 @@
     "Math":"Math",
     "English":"English",
     "Drawings":"Drawings",
+    "drawings_description":"My father's Drawings~~",
     "Piano":"Piano",
     "Photography":"Photography",
     "Cello":"Cello",
+    "photography_description":"From my best friend ~",
+    "piano_description":"My son Hubery's Piano!! It is been One year now.",
+    "cello_description":"My son Hubery's Cello!! It only couple months.",
     "Views_Count":"View Count： "
   }
